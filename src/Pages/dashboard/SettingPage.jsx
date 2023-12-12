@@ -4,7 +4,7 @@ import { CiImageOn } from 'react-icons/ci';
 import { LuPhoneCall } from 'react-icons/lu';
 import { FiUpload } from 'react-icons/fi';
 
-const SettingsPage = () => {
+const SettingPage = () => {
   return (
     <div className='bg-[#F0F2F5] pl-12 pr-4 pb-10 pt-6'>
       <h3 className='text-xl'>Profile Info</h3>
@@ -174,4 +174,4 @@ const SettingsPage = () => {
     </div>
   );
 };
-export default SettingsPage;
+export default SettingPage;
