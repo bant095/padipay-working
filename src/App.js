@@ -131,7 +131,7 @@ function App() {
         <Route path='/usersborrowers' element={<UsersBorrower />} />
 
         {/* KYC */}
-        <Route path='/' element={<Kyc />} />
+        <Route path='/kyc' element={<Kyc />} />
 
         {/* SETTINGS */}
         <Route path='/setting' element={<SettingsPage />} />

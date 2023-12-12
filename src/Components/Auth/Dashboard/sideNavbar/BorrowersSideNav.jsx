@@ -85,10 +85,7 @@ const BorrowersSideNav = ({ user, loading }) => {
       </Link>
 
       {/* lend */}
-      <Link
-        to='/borrowersDashboard3'
-        className='flex gap-4 items-center px-3 py-5 '
-      >
+      <Link to='/kyc' className='flex gap-4 items-center px-3 py-5 '>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           fill='none'
