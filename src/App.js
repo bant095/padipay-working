@@ -56,6 +56,9 @@ import UsersLender from './Pages/dashboard/admin-dashboard/admin-users/UsersLend
 import UsersBorrower from './Pages/dashboard/admin-dashboard/admin-users/UsersBorrower';
 import AdminWithdrawal from './Pages/dashboard/admin-dashboard/AdminWithdrawal';
 import AdminTransactions from './Pages/dashboard/admin-dashboard/AdminTransactions';
+import Kyc from './Pages/dashboard/borrower-dashboard/Kyc';
+import VerifyPassword from './Pages/VerifyPassword';
+import ForgotPassword from './Pages/ForgotPassword';
 
 function App() {
   return (
@@ -127,6 +130,15 @@ function App() {
         <Route path='/userslenders' element={<UsersLender />} />
         <Route path='/usersborrowers' element={<UsersBorrower />} />
 
+        {/* KYC */}
+        <Route path='/' element={<Kyc />} />
+
+        {/* SETTINGS */}
+        <Route path='/setting' element={<SettingsPage />} />
+
+        {/* PASSWORD */}
+        <Route path='/verifypassword' element={<VerifyPassword />} />
+        <Route path='/forgotpassword' element={<ForgotPassword />} />
         <Route
           path='/NonInterestDashboard'
           element={<NonInterestDashboard />}

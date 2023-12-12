@@ -10,7 +10,7 @@ const FooterDashboard = () => {
     <div className='flex items-center gap-3 my-12 mx-4 text-[#344767]'>
       {/* 1 */}
       <Link
-        to='/'
+        to='/setting'
         className='group  hover:bg-slate-50 h-32 shadow rounded p-5 flex gap-5 items-center'
       >
         <div className='text-[50px]'>
