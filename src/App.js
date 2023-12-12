@@ -21,8 +21,6 @@ import PostForBlog from './Pages/PostForBlog';
 import PrivacyPolicyPage from './Pages/PrivacyPolicyPage';
 import Calculator from './Components/Calculator/Calculator';
 import GuarantorsAgreementPage from './Pages/GuarantorsAgreementPage';
-import SettingsPage from './Pages/SettingsPage';
-
 // import MobileStore from './Components/Sections/MobileStore';
 
 import BorrowerDashboard from './Pages/dashboard/borrower-dashboard/BorrowerDashboard';
@@ -59,6 +57,13 @@ import AdminTransactions from './Pages/dashboard/admin-dashboard/AdminTransactio
 import Kyc from './Pages/dashboard/borrower-dashboard/Kyc';
 import VerifyPassword from './Pages/VerifyPassword';
 import ForgotPassword from './Pages/ForgotPassword';
+import AccountDetails from './Pages/dashboard/borrower-dashboard/kyc/AccountDetails';
+import DigitPin from './Pages/dashboard/borrower-dashboard/kyc/DigitPin';
+import EmploymentStatus from './Pages/dashboard/borrower-dashboard/kyc/EmploymentStatus';
+import NextOfKin from './Pages/dashboard/borrower-dashboard/kyc/NextOfKin';
+import TermsOfUse from './Pages/dashboard/borrower-dashboard/kyc/TermsOfUse';
+import PersonalDetails from './Pages/dashboard/borrower-dashboard/kyc/PersonalDetails';
+import SettingPage from './Pages/dashboard/SettingPage';
 
 function App() {
   return (
@@ -85,7 +90,6 @@ function App() {
         />
         <Route path='/' element={<LandingPage />} />
         <Route path='/calculator' element={<Calculator />} />
-        <Route path='/settings' element={<SettingsPage />} />
 
         <Route path='/borrowersDashboard' element={<BorrowerDashboard />} />
         <Route path='/borrowersDashboard2' element={<BorrowerSectionTwo />} />
@@ -132,9 +136,15 @@ function App() {
 
         {/* KYC */}
         <Route path='/kyc' element={<Kyc />} />
+        <Route path='/accountdetails' element={<AccountDetails />} />
+        <Route path='/digitpin' element={<DigitPin />} />
+        <Route path='/employmentstatus' element={<EmploymentStatus />} />
+        <Route path='/nextofkin' element={<NextOfKin />} />
+        <Route path='/termsofuse' element={<TermsOfUse />} />
+        <Route path='/personaldetails' element={<PersonalDetails />} />
 
         {/* SETTINGS */}
-        <Route path='/setting' element={<SettingsPage />} />
+        <Route path='/setting' element={<SettingPage />} />
 
         {/* PASSWORD */}
         <Route path='/verifypassword' element={<VerifyPassword />} />
