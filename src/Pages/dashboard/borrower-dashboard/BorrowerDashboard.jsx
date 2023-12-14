@@ -7,13 +7,21 @@ import { MdAccessTime } from "react-icons/md";
 
 import BorrowersSideNav from "../../../Components/Auth/Dashboard/sideNavbar/BorrowersSideNav";
 import BorrowersNavBar from "../../../Components/Auth/Dashboard/headerNavBar/BorrowersNavbar";
+import { useNavigate } from "react-router-dom/dist";
 
 const BorrowerDashboard = () => {
   const [user, setUser] = useState({});
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const response = JSON.parse(localStorage.getItem("user"));
+    const token = JSON.parse(localStorage.getItem("token"));
+
+    if (!token) {
+      navigate("/login");
+      return;
+    }
     setUser(response);
     setLoading(false);
   }, []);
