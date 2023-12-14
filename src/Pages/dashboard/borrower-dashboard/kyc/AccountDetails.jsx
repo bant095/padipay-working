@@ -13,17 +13,7 @@ const AccountDetails = () => {
         {/* Right side */}
         <div className=' bg-white w-screen my-10 px-16 py-8'>
           <h1 className='text-2xl font-bold'>Account Details</h1>
-          <div className='my-6'>
-            <label htmlFor='nin'>NIN</label>
-            <input
-              type='number'
-              id='nin'
-              name='nin'
-              className='border-2 rounded-[10px] border-lowergrey bg-[#F0F0F0] px-4 w-full py-3'
-              required
-              tabIndex='6'
-            />
-          </div>
+
           <div className='my-6'>
             <label htmlFor='accountNumber'>Account Number:</label>
             <input
@@ -58,7 +48,7 @@ const AccountDetails = () => {
             />
           </div>
           <div className='my-6'>
-            <label htmlFor='natureOfBusiness'>Nature of Business:</label>
+            <label htmlFor='natureOfBusiness'>Account Name:</label>
             <input
               type='text'
               id='natureOfBusiness'

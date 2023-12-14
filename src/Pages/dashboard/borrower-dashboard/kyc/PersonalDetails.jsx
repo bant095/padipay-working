@@ -17,6 +17,7 @@ const PersonalDetails = () => {
             tabIndex='3'
           />
         </div>
+
         <div className='relative my-6'>
           <label htmlFor='middleName'>Middle Name:</label>
           <input
@@ -28,6 +29,7 @@ const PersonalDetails = () => {
             tabIndex='3'
           />
         </div>
+
         <div className='relative my-6'>
           <label htmlFor='lastName'>Last Name:</label>
           <input
@@ -39,6 +41,20 @@ const PersonalDetails = () => {
             tabIndex='3'
           />
         </div>
+
+        {/* nin */}
+        <div className='my-6'>
+          <label htmlFor='nin'>NIN</label>
+          <input
+            type='number'
+            id='nin'
+            name='nin'
+            className='border-2 rounded-[10px] border-lowergrey bg-[#F0F0F0] px-4 w-full py-3'
+            required
+            tabIndex='6'
+          />
+        </div>
+
         <div className='relative my-6'>
           <label htmlFor='address'>Address:</label>
           <input
@@ -66,6 +82,7 @@ const PersonalDetails = () => {
               <option value='Kwara'>Kwara</option>
             </select>
           </div>
+
           <div className='relative'>
             <label htmlFor='lga'>LGA:</label>
             <select

@@ -11,7 +11,7 @@ const Kyc = () => {
 
         {/* -------------------------------------------------- */}
         {/* Right side */}
-        <div className='flex items-center justify-between bg-white w-screen my-10 px-16 py-8'>
+        <div className='bg-white w-screen my-10 px-16 py-8'>
           {/* Left side */}
           <form id='kycForm' onsubmit='return false;'>
             {/* Personal Details */}
